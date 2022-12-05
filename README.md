@@ -1,4 +1,4 @@
-# JavaSpring
+# Java/Spring
 
 ## Ch01. 강의 소개
 
@@ -67,6 +67,8 @@ mysql -u root - p
 ### 02. 객체지향 개념 다지기
 
 ### 03. 객체지향 프로그래밍 실슴 - 사칙연산 계산기
+
+- 프로젝트: [oop-practice](oop-practice) Calculator 관련 코드 참고
 
 ### 04. 객체지향 프로그래밍 실슴 - 학점 계산기
 
