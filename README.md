@@ -39,3 +39,13 @@ docker run --name mysql-sample-container -e MYSQL_ROOT_PASSWORD=<password> -d -p
 docker ps -a
 ```
 
+#### MySQL 도커 컨테이너 접속
+
+```
+docker exec -if {도커 커테이너 이름} bash
+```
+
+#### My SQL 접속
+``` 
+mysql -u root - p
+```
