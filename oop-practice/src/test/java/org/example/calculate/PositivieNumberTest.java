@@ -1,4 +1,4 @@
-package org.example;
+package org.example.calculate;
 
 import org.example.calculate.PositivieNumber;
 import org.junit.jupiter.api.Test;
