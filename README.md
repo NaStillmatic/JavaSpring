@@ -13,7 +13,7 @@
 1. 'IntelliJ IDEA > Preferences > Build, Execution, Deployment > Build Tools > Gradle > Build And Run Using: IntelliJ IDEA 적용'
 2. Project Structure('커맨드 + 세미콜론' 단축키) > Output Path 를 '프로젝트경로/webapps/WEB-INF/classes' 로 설정
 
-- 프로젝트: mvc-practice
+- 프로젝트: [mvc-practice](mvc-practice) 
 
 
 ### 01. 도커 및 도커 컴포즈 소개
@@ -62,7 +62,7 @@ mysql -u root - p
 
 ### 01. 테스트코드 실습
 
-- 프로젝트: oop-practice
+- 프로젝트: [oop-practice](oop-practice) 
 
 ### 02. 객체지향 개념 다지기
 
