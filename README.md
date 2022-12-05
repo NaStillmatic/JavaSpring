@@ -1,12 +1,19 @@
 # JavaSpring
 
+## Ch01. 강의 소개
+
+...
+
 ## Ch02. 개발환경 구성하기
+
 
 ### 00. 웹 프로젝트 환경 구성
 
 #### 빌드 설정 셋팅
 1. 'IntelliJ IDEA > Preferences > Build, Execution, Deployment > Build Tools > Gradle > Build And Run Using: IntelliJ IDEA 적용'
 2. Project Structure('커맨드 + 세미콜론' 단축키) > Output Path 를 '프로젝트경로/webapps/WEB-INF/classes' 로 설정
+
+- 프로젝트: mvc-practice
 
 
 ### 01. 도커 및 도커 컴포즈 소개
@@ -49,3 +56,19 @@ docker exec -it {도커 커테이너 이름} bash
 ``` 
 mysql -u root - p
 ```
+
+## Ch03. 객체지향 패러다임
+
+
+### 01. 테스트코드 실습
+
+- 프로젝트: oop-practice
+
+### 02. 객체지향 개념 다지기
+
+### 03. 객체지향 프로그래밍 실슴 - 사칙연산 계산기
+
+### 04. 객체지향 프로그래밍 실슴 - 학점 계산기
+
+### 05. 객체지향 프로그램 실슴 - 음식점에서 음식 주문하는 과정
+
