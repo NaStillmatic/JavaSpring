@@ -1,8 +1,5 @@
 package org.example.calculator.domain;
 
-IntelliJ IDEA
-        package org.example.calculator.domain;
-
 public class PositiveNumber {
     public static final String ZERO_OR_NEGATIVE_NUMBER_EXCEPTION_MESSAGE = "0 또는 음수를 전달할 수 없습니다.";
     private final int value;
