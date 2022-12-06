@@ -11,7 +11,7 @@ public class WebApplicationServerLauncher {
 
     public static void main(String[] args) throws Exception {
         // 내장 톰캣
-        String webappDirLocation = "webapp/";
+        String webappDirLocation = "webapps/";
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(8080);
 
