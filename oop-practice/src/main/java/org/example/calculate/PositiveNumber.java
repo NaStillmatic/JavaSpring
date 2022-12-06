@@ -1,9 +1,9 @@
 package org.example.calculate;
 
-public class PositivieNumber {
+public class PositiveNumber {
     private final int value;
 
-    public PositivieNumber(int value) {
+    public PositiveNumber(int value) {
         validate(value);
         this.value = value;
     }

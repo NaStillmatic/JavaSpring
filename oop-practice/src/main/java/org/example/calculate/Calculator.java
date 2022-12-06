@@ -1,7 +1,5 @@
 package org.example.calculate;
 
-import org.example.calculate.*;
-
 import java.util.List;
 
 public class Calculator {
@@ -18,7 +16,7 @@ public class Calculator {
 //        return ArithmeticOperator.calculate(operand1, operator, operand2);
 //    }
 
-    public static int calculate(PositivieNumber operand1, String operator, PositivieNumber operand2) {
+    public static int calculate(PositiveNumber operand1, String operator, PositiveNumber operand2) {
         return arithmeticOperators.stream()
                 .filter(arithmeticOperator -> arithmeticOperator.supports(operator))
                 .map(arithmeticOperator -> arithmeticOperator.calculate(operand1, operand2))

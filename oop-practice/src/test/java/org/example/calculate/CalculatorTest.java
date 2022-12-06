@@ -22,7 +22,7 @@ public class CalculatorTest {
     @ParameterizedTest
     @MethodSource("formulaAndResult")
     void calculateTest(int operand1, String operator, int operand2, int result) {
-        int calculateResult = Calculator.calculate(new PositivieNumber(operand1), operator, new PositivieNumber(operand2));
+        int calculateResult = Calculator.calculate(new PositiveNumber(operand1), operator, new PositiveNumber(operand2));
         assertThat(calculateResult).isEqualTo(result);
     }
 
