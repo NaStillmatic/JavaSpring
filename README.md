@@ -90,7 +90,19 @@ mysql -u root - p
 
 ...
 
-#### 02. 계산기 웹 프로그램 구현하기 -Step 1
+#### 02~04. 계산기 웹 프로그램 구현하기 -Step 1, 2, 3
 
 - 프로젝트: [was-practice](was-practice) 
 - 강좌 calculator 파일 링크: https://github.com/serverwizard/was-practice/tree/master/src/main/java/org/example/calculator
+
+
+#### 05. CGI 프로그램과 서블릿
+
+- 강좌 calculator 파일 링크: https://github.com/serverwizard/servlet-practice/tree/master/src/main/java/org/example/calculator
+
+- 프로젝트: [servlet-practice](servlet-practice) 
+
+#### 06. 계산기 서블릿 만들기
+
+- 프로젝트: [servlet-practice](servlet-practice) 
+
