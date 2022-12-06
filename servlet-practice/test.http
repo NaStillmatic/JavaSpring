@@ -1,0 +1,5 @@
+// 예약 문자는 다음과 같다. 이들 중 일부는 URI에서 중요한 문법적 의미를 가지고 있기 때문에, 그 의미로 사용할 것이 아니라면 반드시 인코딩을 해야 한다.
+// 예로 operator가 + 일 경우 %2b 로 변경하면 정상적인 결과를 확인할 수 있다.
+// https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%84%BC%ED%8A%B8_%EC%9D%B8%EC%BD%94%EB%94%A9
+
+GET http://localhost:8080/calculate?operand1=20&operator=%2b&operand2=10
