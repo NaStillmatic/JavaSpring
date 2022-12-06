@@ -16,7 +16,7 @@
 1. 'IntelliJ IDEA > Preferences > Build, Execution, Deployment > Build Tools > Gradle > Build And Run Using: IntelliJ IDEA 적용'
 2. Project Structure('커맨드 + 세미콜론' 단축키) > Output Path 를 '프로젝트경로/webapps/WEB-INF/classes' 로 설정
 
-- 프로젝트: [mvc-practice](mvc-practice) 
+- 프로젝트: [mvc-practice](part_01/mvc-practice) 
 
 
 #### 01. 도커 및 도커 컴포즈 소개
@@ -65,7 +65,7 @@ mysql -u root - p
 
 #### 01. 테스트코드 실습
 
-- 프로젝트: [oop-practice](oop-practice) 
+- 프로젝트: [oop-practice](part_01/oop-practice) 
 
 #### 02. 객체지향 개념 다지기
 
@@ -92,7 +92,7 @@ mysql -u root - p
 
 #### 02~04. 계산기 웹 프로그램 구현하기 -Step 1, 2, 3
 
-- 프로젝트: [was-practice](was-practice) 
+- 프로젝트: [was-practice](part_01/was-practice) 
 - 강좌 calculator 파일 링크: https://github.com/serverwizard/was-practice/tree/master/src/main/java/org/example/calculator
 
 
@@ -100,9 +100,9 @@ mysql -u root - p
 
 - 강좌 calculator 파일 링크: https://github.com/serverwizard/servlet-practice/tree/master/src/main/java/org/example/calculator
 
-- 프로젝트: [servlet-practice](servlet-practice) 
+- 프로젝트: [servlet-practice](part_01/servlet-practice) 
 
 #### 06. 계산기 서블릿 만들기
 
-- 프로젝트: [servlet-practice](servlet-practice) 
+- 프로젝트: [servlet-practice](part_01/servlet-practice) 
 
