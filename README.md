@@ -66,11 +66,17 @@ mysql -u root - p
 
 ### 02. 객체지향 개념 다지기
 
+- Package: password
+
 ### 03. 객체지향 프로그래밍 실슴 - 사칙연산 계산기
 
-- 프로젝트: [oop-practice](oop-practice) Calculator 관련 코드 참고
+- Package: calculate 
 
 ### 04. 객체지향 프로그래밍 실슴 - 학점 계산기
 
+- Package: grade 
+
 ### 05. 객체지향 프로그램 실슴 - 음식점에서 음식 주문하는 과정
+
+- Package: order
 
