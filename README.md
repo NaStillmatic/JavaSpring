@@ -147,7 +147,7 @@ mysql -u root - p
 
 ### CH07. DI 프레임워크 만들기
 
-- 프로젝트: [di-practice3](part_01/di-practice3)
+- 프로젝트: [di-practice](part_01/di-practice)
 
 
 
