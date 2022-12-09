@@ -143,7 +143,20 @@ mysql -u root - p
 
 
 
-### 05. DI 프레임워크 만들기
+
+
+### CH07. DI 프레임워크 만들기
+
+- 프로젝트: [di-practice3](part_01/di-practice3)
+
+
+
+### CH08. Spring Boot 코드 분석
+
+
+
+
+## Part 2. 게시판 서비스
 
 
 
