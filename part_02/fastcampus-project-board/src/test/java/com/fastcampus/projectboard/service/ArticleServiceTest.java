@@ -263,10 +263,9 @@ class ArticleServiceTest {
 
     private UserAccountDto createUserAccountDto() {
         return UserAccountDto.of(
-                1L,
                 "joe",
                 "password",
-                "uno@mail.com",
+                "nastillmatic@mail.com",
                 "Joe",
                 "This is memo",
                 LocalDateTime.now(),
