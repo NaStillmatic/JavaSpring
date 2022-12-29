@@ -21,20 +21,18 @@ class PaginationServiceTest {
 
     private final PaginationService sut;
 
-    public PaginationServiceTest(@Autowired  PaginationService paginationService) {
+    PaginationServiceTest(@Autowired  PaginationService paginationService) {
         this.sut = paginationService;
     }
 
     @DisplayName("현재 페이지 번호와 총 페이지 수를 주면, 페이징 바 리스트를 만들어 준다.")
     @MethodSource
     @ParameterizedTest(name = "[{index}] 현재페이지: {0}, 총 페이지: {1} => {2}")
-
     void givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int currentPagNumber, int totalPages, List<Integer> expected) {
         // Given
 
         // When
         List<Integer> actual = sut.getPaginationBarNumbers(currentPagNumber, totalPages);
-
 
         // Then
         assertThat(actual).isEqualTo(expected);
