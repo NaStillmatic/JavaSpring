@@ -1,8 +1,6 @@
 package com.fastcampus.projectboard.controller;
 
-import com.fastcampus.projectboard.dto.UserAccountDto;
 import com.fastcampus.projectboard.dto.request.ArticleCommentRequest;
-import com.fastcampus.projectboard.dto.request.ArticleRequest;
 import com.fastcampus.projectboard.dto.security.BoardPrincipal;
 import com.fastcampus.projectboard.service.ArticleCommentService;
 import lombok.RequiredArgsConstructor;
