@@ -32,7 +32,7 @@ public class BookingEntity extends BaseEntity {
     private LocalDateTime cancelledAt;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "userId", insertable = true, updatable = false)
+    @JoinColumn(name = "userId", insertable = false, updatable = false)
     private UserEntity userEntity;
 
     @ManyToOne(fetch = FetchType.LAZY)

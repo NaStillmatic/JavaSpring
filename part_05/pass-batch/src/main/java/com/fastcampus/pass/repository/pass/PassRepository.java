@@ -12,6 +12,6 @@ public interface PassRepository extends JpaRepository<PassEntity, Integer> {
     @Query(value = "UPDATE PassEntity p" +
             "          SET p.remainingCount = :remainingCount," +
             "              p.modifiedAt = CURRENT_TIMESTAMP" +
-            "        WHERE p.passSeq =: passSeq")
+            "        WHERE p.passSeq = :passSeq")
     int updatedRemainingCount(Integer passSeq, Integer remainingCount);
 }

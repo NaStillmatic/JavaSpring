@@ -72,7 +72,7 @@ public class UsePassesJobConfig {
                 .build();
     }
 
-    // 이 프로젝트에서는 적합하지 않지만, ItemProcessor의 수행이 오래걸려 병목이 생기는 경우에 AsyncItemProcessor, AsyncItemWriter를 사용하면 성능을 향상시킬 수 있습니다.
+    // 이 프로젝트에서는 적합하지 않지만, ItemProcessor 의 수행이 오래걸려 병목이 생기는 경우에 AsyncItemProcessor, AsyncItemWriter 를 사용하면 성능을 향상시킬 수 있습니다.
     @Bean
     public AsyncItemProcessor<BookingEntity, BookingEntity> usePassesAsyncItemProcessor() {
         AsyncItemProcessor<BookingEntity, BookingEntity> asyncItemProcessor = new AsyncItemProcessor<>();
