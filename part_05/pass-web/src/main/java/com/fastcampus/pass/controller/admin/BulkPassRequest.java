@@ -1,5 +1,6 @@
 package com.fastcampus.pass.controller.admin;
 
+import com.fastcampus.pass.util.LocalDateTimeUtils;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -16,6 +17,7 @@ public class BulkPassRequest {
     private LocalDateTime startedAt;
 
     public void setStartedAt(String startedAtString) {
-        this.startedAt = LocalDateTime.parse(startedAtString);
+        this.startedAt = LocalDateTimeUtils.parse(startedAtString);
     }
+
 }
