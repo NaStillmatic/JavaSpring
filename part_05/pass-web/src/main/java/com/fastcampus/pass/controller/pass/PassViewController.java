@@ -24,8 +24,9 @@ public class PassViewController {
     }
 
     @GetMapping
-    public ModelAndView getPasses(@RequestParam("userId") String userId, ModelAndView modelAndView) {
-        // passes, user
+    public ModelAndView getPasses(@RequestParam("userId") String userId) {
+
+        ModelAndView modelAndView = new ModelAndView();
         final List<Pass> passes = passService.getPasses(userId);
         final User user = userService.getUser(userId);
 

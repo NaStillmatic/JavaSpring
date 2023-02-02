@@ -24,11 +24,12 @@ public class StatisticsService {
         List<Long> attendedCounts = new ArrayList<>();
         List<Long> cancelledCounts = new ArrayList<>();
 
-        for (AggregatedStatistics statistics: aggregatedStatisticsList) {
+        for (AggregatedStatistics statistics : aggregatedStatisticsList) {
             labels.add(LocalDateTimeUtils.format(statistics.getStatisticsAt(), LocalDateTimeUtils.MM_DD));
             attendedCounts.add(statistics.getAttendedCount());
             cancelledCounts.add(statistics.getCancelledCount());
         }
         return new ChartData(labels, attendedCounts, cancelledCounts);
+
     }
 }
