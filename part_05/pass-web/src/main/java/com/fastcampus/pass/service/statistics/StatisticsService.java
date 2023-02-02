@@ -16,7 +16,7 @@ public class StatisticsService {
         this.statisticsRepository = statisticsRepository;
     }
 
-    public ChartData makeCharData(final LocalDateTime to) {
+    public ChartData makeChartData(final LocalDateTime to) {
         final LocalDateTime from = to.minusDays(10);
 
         final List<AggregatedStatistics> aggregatedStatisticsList = statisticsRepository.findByStatisticsAtBetweenAndGroupBy(from, to);

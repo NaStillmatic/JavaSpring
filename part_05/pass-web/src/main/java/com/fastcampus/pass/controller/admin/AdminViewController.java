@@ -29,7 +29,7 @@ public class AdminViewController {
     public ModelAndView home(ModelAndView modelAndView, @RequestParam("to") String toString) {
         LocalDateTime to = LocalDateTimeUtils.parseDate(toString);
 
-        modelAndView.addObject("chartData", statisticsService.makeCharData(to));
+        modelAndView.addObject("chartData", statisticsService.makeChartData(to));
         modelAndView.setViewName("admin/index");
         return modelAndView;
     }
