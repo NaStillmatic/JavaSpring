@@ -21,7 +21,7 @@ import java.util.List;
 @Component
 @StepScope
 public class MakeDailyStatisticsTasklet implements Tasklet {
-    @Value("#{jobParametersp[from]}")
+    @Value("#{jobParameters[from]}")
     private String fromString;
     @Value("#{jobParameters[to]}")
     private String toString;
