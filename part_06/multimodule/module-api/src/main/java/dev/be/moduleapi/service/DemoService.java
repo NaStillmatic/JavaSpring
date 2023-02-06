@@ -1,6 +1,6 @@
 package dev.be.moduleapi.service;
 
-import com.example.modulecommon.enums.CodeEnum;
+import dev.be.modulecommon.enums.CodeEnum;
 import org.springframework.stereotype.Service;
 
 @Service

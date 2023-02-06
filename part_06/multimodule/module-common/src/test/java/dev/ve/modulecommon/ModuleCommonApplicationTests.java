@@ -1,4 +1,4 @@
-package com.example.modulecommon;
+package dev.ve.modulecommon;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
