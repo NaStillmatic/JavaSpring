@@ -1,6 +1,5 @@
 package dev.be.modulecommon.domain;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,4 +20,5 @@ public class Member {
 
     @Column
     private String name;
+
 }

@@ -1,8 +1,7 @@
 package dev.be.moduleapi.response;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-
+import com.fasterxml.jackson.annotation.JsonInclude;
 import dev.be.modulecommon.enums.CodeEnum;
 import lombok.*;
 
@@ -13,7 +12,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CommonResponse<T> {
-
     private String returnCode;
     private String returnMessage;
     private T info;

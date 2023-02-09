@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomException extends RuntimeException  {
+public class CustomException extends RuntimeException {
     private String returnCode;
     private String returnMessage;
 
@@ -19,4 +19,6 @@ public class CustomException extends RuntimeException  {
         setReturnCode(codeEnum.getCode());
         setReturnMessage(codeEnum.getMessage());
     }
+
+
 }
