@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
         "dev.be.moduleapi",
         "dev.be.modulecommon"
 })
-@EntityScan("dev.be..modulecommon.domain")
+@EntityScan("dev.be.modulecommon.domain")
 @EnableJpaRepositories(basePackages = "dev.be.modulecommon.repositories")
 public class ModuleApiApplication {
 
