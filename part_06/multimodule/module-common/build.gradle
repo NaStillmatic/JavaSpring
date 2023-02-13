@@ -41,3 +41,7 @@ tasks.jar { enabled = true }
 
 //  java -jar module-api-0.0.1-SNAPSHOT.jar // 해당 경로에서 jar 실행하기
 // ./gradlew clean
+
+// local 빌드 Edit Configurations... 에서 Active Profiles 에 beta/local 입력
+// java -jar -Dspring.profiles.active=local module-api-0.0.1-SNAPSHOT.jar
+
