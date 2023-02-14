@@ -34,4 +34,8 @@ public class DemoService {
         return "post";
     }
 
+    public String errorDecoder() {
+        demoFeignClient.callErrorDecoder();
+        return "error";
+    }
 }
