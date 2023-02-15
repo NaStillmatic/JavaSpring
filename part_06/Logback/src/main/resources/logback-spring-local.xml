@@ -7,7 +7,7 @@
         </filter>
         <layout>
             <pattern>
-                [CONSOLE2] [%-5level] %d{yyyy-MM-dd HH:mm:ss} [%thread] [%logger{40}:%line] - %msg%n
+                [CONSOLE2] [%-5level] %d{yyyy-MM-dd HH:mm:ss} [%thread] [%logger{0}:%line] - %msg%n
             </pattern>
         </layout>
     </appender>
