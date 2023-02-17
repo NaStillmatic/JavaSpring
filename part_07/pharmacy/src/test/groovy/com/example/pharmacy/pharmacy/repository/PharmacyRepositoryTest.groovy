@@ -5,6 +5,8 @@ import com.example.pharmacy.pharmacy.entity.Pharmacy
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 
+import java.time.LocalDateTime
+
 @SpringBootTest
 class PharmacyRepositoryTest extends AbstractIntegrationContainerBaseTest {
 
@@ -60,5 +62,25 @@ class PharmacyRepositoryTest extends AbstractIntegrationContainerBaseTest {
 
         then:
         result.size() == 1
+    }
+
+    def "BaseTimeEntity 등록"() {
+        given:
+        LocalDateTime now = LocalDateTime.now()
+        String address = "서울 특별시 성북구 종암동"
+        String name = "은혜 약국"
+
+        def pharmacy = Pharmacy.builder()
+        .pharmacyAddress(address)
+        .pharmacyName(name)
+        .build()
+
+        when:
+        pharmacyRepository.save(pharmacy)
+        def result = pharmacyRepository.findAll()
+
+        then:
+        result.get(0).getCreateDate().isAfter(now)
+        result.get(0).getModifiedDate().isAfter(now)
     }
 }
