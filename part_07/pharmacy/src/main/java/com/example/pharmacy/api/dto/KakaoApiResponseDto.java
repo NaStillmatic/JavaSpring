@@ -13,8 +13,8 @@ import java.util.List;
 public class KakaoApiResponseDto {
 
     @JsonProperty("meta")
-    private MetaDto metaDto;
+    private MetaDto metaData;
 
     @JsonProperty("documents")
-    private List<DocumentDto> documentDtoList;
+    private List<DocumentDto> documentList;
 }
