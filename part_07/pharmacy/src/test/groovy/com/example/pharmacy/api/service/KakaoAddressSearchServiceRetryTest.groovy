@@ -40,10 +40,10 @@ class KakaoAddressSearchServiceRetryTest extends AbstractIntegrationContainerBas
     def "requestAddressSearch retry success"() {
         given:
         def metaDto = new MetaDto(1)
-        def docuemntDto = DocumentDto.builder()
+        def documentDto = DocumentDto.builder()
                 .addressName(inputAddress)
                 .build()
-        def expectedResponse = new KakaoApiResponseDto(metaDto, Arrays.asList(docuemntDto))
+        def expectedResponse = new KakaoApiResponseDto(metaDto, Arrays.asList(documentDto))
         def uri = mockWebServer.url("/").uri()
 
         when:
