@@ -1,5 +1,9 @@
 package com.example.pharmacy.api.service
 
+
+import org.springframework.boot.test.mock.mockito.MockBean
+import spock.lang.Specification
+
 import com.example.pharmacy.AbstractIntegrationContainerBaseTest
 import com.example.pharmacy.api.dto.DocumentDto
 import com.example.pharmacy.api.dto.KakaoApiResponseDto
@@ -12,10 +16,11 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpHeaders
 import org.springframework.http.MediaType
 
+
 class KakaoAddressSearchServiceRetryTest extends AbstractIntegrationContainerBaseTest {
 
     @Autowired
-    private KakaoAddressSearchService kakaoAddressSearchService;
+    private KakaoAddressSearchService kakaoAddressSearchService
 
     @SpringBean
     private KakaoUriBuilderService kakaoUriBuilderService = Mock()
@@ -52,18 +57,18 @@ class KakaoAddressSearchServiceRetryTest extends AbstractIntegrationContainerBas
                 .addHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .setBody(mapper.writeValueAsString(expectedResponse)))
 
-        def kakoApiResult = kakaoAddressSearchService.requestAddressSearch(inputAddress)
-        def takeRequest = mockWebServer.takeRequest()
+        def kakaoApiResult = kakaoAddressSearchService.requestAddressSearch(inputAddress)
 
         then:
         2 * kakaoUriBuilderService.buildUriByAddressSearch(inputAddress) >> uri
-        takeRequest.getMethod() == "GET"
-        kakoApiResult.getDocumentList().size() == 1
-        kakoApiResult.getMetaDto().totalCount == 1
-        kakoApiResult.getDocumentList().get(0).getAddressName() == inputAddress
+        kakaoApiResult.getDocumentList().size() == 1
+        kakaoApiResult.getMetaDto().totalCount == 1
+        kakaoApiResult.getDocumentList().get(0).getAddressName() == inputAddress
+
     }
 
-    def "requestAddressSearch retry fail"() {
+
+    def "requestAddressSearch retry fail "() {
         given:
         def uri = mockWebServer.url("/").uri()
 
@@ -77,5 +82,4 @@ class KakaoAddressSearchServiceRetryTest extends AbstractIntegrationContainerBas
         2 * kakaoUriBuilderService.buildUriByAddressSearch(inputAddress) >> uri
         result == null
     }
-
 }

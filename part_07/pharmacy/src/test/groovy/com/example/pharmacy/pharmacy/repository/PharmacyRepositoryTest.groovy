@@ -7,7 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest
 
 import java.time.LocalDateTime
 
-@SpringBootTest
 class PharmacyRepositoryTest extends AbstractIntegrationContainerBaseTest {
 
     @Autowired
@@ -80,7 +79,7 @@ class PharmacyRepositoryTest extends AbstractIntegrationContainerBaseTest {
         def result = pharmacyRepository.findAll()
 
         then:
-        result.get(0).getCreateDate().isAfter(now)
+        result.get(0).getCreatedDate().isAfter(now)
         result.get(0).getModifiedDate().isAfter(now)
     }
 }
